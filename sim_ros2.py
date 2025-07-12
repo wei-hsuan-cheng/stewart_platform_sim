@@ -11,9 +11,9 @@ import modern_robotics as mr
 from scipy.spatial.transform import Rotation 
 import time
 
-class StewartTFBroadcaster(Node):
+class StewartPlatformSim(Node):
     def __init__(self):
-        super().__init__('stewart_tf_broadcaster')
+        super().__init__('stewart_platform_sim')
         self.br = TransformBroadcaster(self)
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
@@ -352,7 +352,7 @@ class StewartTFBroadcaster(Node):
         
 def main(args=None):
     rclpy.init(args=args)
-    node = StewartTFBroadcaster()
+    node = StewartPlatformSim()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
