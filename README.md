@@ -1,6 +1,6 @@
 # stewart_platform_sim
 
-ROS 2 Python simulation of a six-DoF stewart platform, which is a parallel manipulator comprises a fixed base platform, a moving end-effector platform, and six serial SPS sturctures.
+ROS 2 Python simulation of a six-DoF Stewart platform (or Stewart-Gough platform), which is a parallel manipulator comprises a fixed base platform, a moving end-effector platform, and six serial SPS sturctures.
 
 ## Simulation (visualised in ROS 2 RViz2)
 <img src="assets/stewart_platform_sim.gif" alt="Stewart Platform Sim Demo" width="400"/>
