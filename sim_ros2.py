@@ -387,7 +387,6 @@ class StewartPlatformSim(Node):
             q_i = self.positions_b_bsj[i]
             inv_jacob[i] = np.concatenate([-np.cross(n_hat_i, q_i), n_hat_i])
 
-        # return inv_jacob.T
         return inv_jacob
     
     def compute_moving_average_TMat_dot(self):
