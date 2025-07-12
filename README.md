@@ -26,6 +26,10 @@ cd ~/stewart_platform_sim && python3 sim_ros2.py
 rviz2
 ```
 
+## Bibliography
+- Stewart platform IK and DK:
+  - [1] K. M. Lynch and F. C. Park, Modern Robotics: Mechanics, Planning, and Control. Cambridge University Press, 2017.
+
 ## Contact
 
 - **Author**: Wei-Hsuan Cheng [(johnathancheng0125@gmail.com)](mailto:johnathancheng0125@gmail.com)
