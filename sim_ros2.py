@@ -380,14 +380,18 @@ class StewartPlatformSim(Node):
     '''
     Differential kinematics (Jacobian)
     '''
-    def InvJacob(self):
-        inv_jacob = np.zeros((6, 6))
+    def InverseBaseJacob(self):
+        """
+        Inverse base Jacobian matrix that relates the base twist to the leg velocity, where
+        s_dot = J_b_inv * twist_b
+        """
+        inv_jacob_b = np.zeros((6, 6))
         for i in range(6):
             n_hat_i = self.Normalized(self.positions_b_esj[i] - self.positions_b_bsj[i])
             q_i = self.positions_b_bsj[i]
-            inv_jacob[i] = np.concatenate([-np.cross(n_hat_i, q_i), n_hat_i])
+            inv_jacob_b[i] = np.concatenate([-np.cross(n_hat_i, q_i), n_hat_i])
 
-        return inv_jacob
+        return inv_jacob_b
     
     def compute_moving_average_TMat_dot(self):
         if len(self.T_b_e_buffer) < 2:
@@ -444,7 +448,7 @@ class StewartPlatformSim(Node):
     def verify_jacobian(self):
         """Verify the Jacobian by checking the leg velocity."""
         # Get leg velocity from target twist and Jacobian, s_dot = J_b_inv * twist_b
-        self.s_dot = self.InvJacob() @ self.compute_mavg_base_twist()
+        self.s_dot = self.InverseBaseJacob() @ self.compute_mavg_base_twist()
         self.s_dot_verify = self.compute_mavg_s_dot()
         self.s_dot_error = np.array([self.ErrorPercentage(self.s_dot[i], self.s_dot_verify[i]) for i in range(len(self.s))])
 
