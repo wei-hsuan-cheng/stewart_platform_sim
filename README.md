@@ -25,3 +25,9 @@ Run the simulation in ros2:
 cd ~/stewart_platform_sim && python3 sim_ros2.py
 rviz2
 ```
+
+## Contact
+
+- **Author**: Wei-Hsuan Cheng [(johnathancheng0125@gmail.com)](mailto:johnathancheng0125@gmail.com)
+- **Homepage**: [wei-hsuan-cheng](https://wei-hsuan-cheng.github.io)
+- **GitHub**: [wei-hsuan-cheng](https://github.com/wei-hsuan-cheng)

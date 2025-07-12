@@ -455,7 +455,6 @@ class StewartPlatformSim(Node):
     
     def print_results(self):
         """Print the results of the IK solution and Jacobian verification."""
-        
         # print(f"\nEnd-effector pose [m, quat] = {self.target_pos_b_e}, {self.target_quat_b_e}")
         # print(f"\nIK solution (leg length) [m] = {self.s}")
         # print(f"\n--------------------")
