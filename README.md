@@ -13,7 +13,7 @@ The Jacobian for, DK $J_b:\ se(3) \to \mathbb{R}^6$ is also provided, where
 - $\dot{\boldsymbol{s}} = J_b \cdot \mathcal{V}_b = J_b \cdot \mathrm{Ad}(^b\boldsymbol{\xi}_e) \cdot \mathcal{V}_e$
 - $\dot{\boldsymbol{s}}$ is the leg velocity
 - $J_b$ and $\mathcal{V}_b$ are the base Jacobian and twist, respectively
-- $\mathcal{V}_e$ is the end-effector twist (spatial velocity) that can be transformed into $\mathcal{V}_b$ through the adjoint map $\mathrm{Ad}(^b\boldsymbol{\xi}_e)$
+- $\mathcal{V}_e$ is the end-effector twist (spatial velocity) that can be transformed into $\mathcal{V}_b$ through the adjoint map $\mathrm{Ad}(^b\boldsymbol{\xi}_e)$.
 
 ## Simulation (visualised in ROS 2 RViz2)
 <img src="assets/stewart_platform_sim.gif" alt="Stewart Platform Sim Demo" width="400"/>
