@@ -1,6 +1,8 @@
 # stewart_platform_sim
 
-ROS 2 Python simulation of a six-DoF Stewart platform (or Stewart-Gough platform), which is a parallel manipulator comprising a fixed base platform, a moving end-effector platform, and six serial SPS sturctures.
+ROS 2 Python simulation of a six-DoF Stewart platform (or Stewart-Gough platform<sup>[1](#hb),[2](#hb)</sup>), which is a parallel manipulator comprising a fixed base platform, a moving end-effector platform, and six serial SPS sturctures<sup>[2](#hb)</sup>.
+
+<img src="assets/stewart_gouph_platform.png" alt="Stewart Platform Sim Demo" width="400"/>
 
 The inverse kinematic (IK) and differential kinematics (DK) problems are solved as to obtain the required  ***leg lengths*** and ***leg velocities*** for driving the robot to achieve a desired motion in $SE(3)$.
 
@@ -21,14 +23,19 @@ The Jacobian for, DK $J_b:\ se(3) \to \mathbb{R}^6$ is also provided, where
 ## Demo
 Run the simulation in ros2:
 ```bash
-# Simulation in ros2 and visualise in rivz2
+# Simulate in ros2 and visualise in rivz2
 cd ~/stewart_platform_sim && python3 sim_ros2.py
 rviz2
 ```
 
 ## Bibliography
+- Picture of the Stewart-Gough platform mechanism:
+  - <a name="hb">[1]</a> J.-P. Merlet, C. Gosselin, and Tian Huang. Parallel mechanisms. In B. Siciliano and O. Khatib, editors, Handbook of Robotics, Second Edition, pages 443–461. Springer-Verlag, 2016.
+
 - Stewart platform IK and DK:
-  - [1] K. M. Lynch and F. C. Park, Modern Robotics: Mechanics, Planning, and Control. Cambridge University Press, 2017.
+  - <a name="mr">[2]</a> K. M. Lynch and F. C. Park, Modern Robotics: Mechanics, Planning, and Control. Cambridge University Press, 2017.
+
+
 
 ## Contact
 
