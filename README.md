@@ -6,7 +6,7 @@ ROS 2 Python simulation of a six-DoF Stewart platform (or Stewart-Gough platform
   <img src="assets/stewart_gouph_platform.png" alt="Stewart-Gough Platform Picture" width="300"/>
 </p>
 
-The inverse kinematic (IK) and differential kinematics (DK) problems are solved as to obtain the required  ***leg lengths*** and ***leg velocities*** for driving the robot to achieve a desired motion in $SE(3)$.
+The inverse kinematics (IK) and differential kinematics (DK) problems are solved as to obtain the required  ***leg lengths*** and ***leg velocities*** for driving the robot to achieve a desired motion in $SE(3)$.
 
 The map for IK, $H_{\mathrm{ik}}:\ SE(3) \to \mathbb{R}^6$ is provided, where 
 - $\boldsymbol{s} = H_{\mathrm{ik}}(^b\boldsymbol{\xi}_e)$
