@@ -2,7 +2,7 @@
 
 ROS 2 Python simulation of a six-DoF Stewart platform (or Stewart-Gough platform<sup>[1](#hb),[2](#hb)</sup>), which is a parallel manipulator comprising a fixed base platform, a moving end-effector platform, and six serial SPS sturctures<sup>[2](#hb)</sup>.
 
-<img src="assets/stewart_gouph_platform.png" alt="Stewart Platform Sim Demo" width="400"/>
+<img src="assets/stewart_gouph_platform.png" alt="Stewart Platform Sim Demo" width="300"/>
 
 The inverse kinematic (IK) and differential kinematics (DK) problems are solved as to obtain the required  ***leg lengths*** and ***leg velocities*** for driving the robot to achieve a desired motion in $SE(3)$.
 
