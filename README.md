@@ -17,7 +17,7 @@ The *inverse* Jacobian for DK, $J_b^{-1}:\ se(3) \to \mathbb{R}^6$ is also provi
 - $\dot{\boldsymbol{s}} = J_b^{-1} \cdot \mathcal{V}_b = J_b^{-1} \cdot \mathrm{Ad}(^b\boldsymbol{\xi}_e) \cdot \mathcal{V}_e$
 - $\dot{\boldsymbol{s}} \in \mathbb{R}^6$ is the leg velocity
 - $J_b^{-1} \in \mathbb{R}^{6\times 6}$ and $\mathcal{V}_b \in se(3)$ are the *base* inverse Jacobian and *base* twist, respectively
-- $\mathcal{V}_e \in se(3)$ is the *end-effector* twist (spatial velocity) that can be transformed into $\mathcal{V}_b$ through the adjoint map $\mathrm{Ad}(^b\boldsymbol{\xi}_e) \in \mathbb{R}^{6\times 6}$.
+- $\mathcal{V}_e \in se(3)$ is the *end-effector* twist (spatial velocity for both linear and angular) that can be transformed into $\mathcal{V}_b$ through the adjoint map $\mathrm{Ad}(^b\boldsymbol{\xi}_e) \in \mathbb{R}^{6\times 6}$.
 
 ## Simulation (visualised in ROS 2 RViz2)
 <p align="center">
